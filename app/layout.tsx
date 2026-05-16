@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pranay's Portfolio",
-  description: "A portfolio website showcasing Pranay's projects and skills.",
+  title: "Pranay Kumar Jha | Full Stack Developer",
+  description: "Portfolio of Pranay Kumar Jha — Full Stack Developer building real-time web apps with Next.js, React, and TypeScript. Open to internships.",
 };
 
 export default function RootLayout({

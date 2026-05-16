@@ -25,7 +25,7 @@ const RecentProjects = () => {
                                 <img
                                     src={img}
                                     alt={title}
-                                    className="absolute z-10 bottom-0"
+                                    className={img.endsWith('.png') ? 'absolute z-10 inset-0 w-full h-full object-cover object-top' : 'absolute z-10 bottom-0'}
                                 />
 
                             </div>
@@ -53,10 +53,15 @@ const RecentProjects = () => {
                                         </div>
                                     ))}
                                 </div>
-                                <div className='flex justify-center items-center'>
-                                    <p className="flex lg:text-xl md:text-xs text-sm text-purple-300">Check Live Site!</p>
+                                <a
+                                    href={link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className='flex justify-center items-center cursor-pointer hover:opacity-80 transition-opacity'
+                                >
+                                    <p className="flex lg:text-xl md:text-xs text-sm text-purple-300">View on GitHub</p>
                                     <FaLocationArrow className="ms-3 " color="#CBACF9" />
-                                </div>
+                                </a>
 
                             </div>
                         </PinContainer>

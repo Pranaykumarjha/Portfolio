@@ -14,18 +14,14 @@ const Approach = () => {
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card title="Planning is Strategy" icon={<AceternityIcon order='Phase 1' />}
-          description="I focus on planning and strategy before execution.
-           Breaking complex problems into logical steps allows me to design efficient and scalable solutions.
-            This mindset helps me build clean, well-structured projects.">
+          description="I break down complex problems into logical steps — from requirements and system design to choosing the right stack for scalable full-stack applications.">
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
         <Card title="Development & Progress Update" icon={<AceternityIcon order="Phase 2" />}
-          description="I follow an iterative development process where features are built, tested, and improved continuously.
-         Keeping track of progress helps me identify areas for optimization and maintain code quality.
-          This ensures projects evolve in a structured and efficient way.">
+          description="I build features iteratively with React, Next.js, and Node.js — integrating APIs, auth, and real-time data while testing and optimizing performance along the way.">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -39,8 +35,7 @@ const Approach = () => {
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
         <Card title="Deployment & Launch" icon={<AceternityIcon order="Phase 3" />}
-          description="I ensure smooth deployment of applications, handling all necessary configurations and optimizations.
-           This includes setting up CI/CD pipelines, managing environments, and monitoring performance post-deployment.">
+          description="I deploy applications to platforms like Vercel and Netlify, configure environments, and ensure responsive, production-ready experiences across devices.">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"

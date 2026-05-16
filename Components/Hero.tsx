@@ -22,28 +22,35 @@ const Hero = () => {
           "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
         )}
       />
-      {/* Radial gradient for the container to give a faded look */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
       
     </div>
       <div className='relative z-10 flex justify-center my-20' >
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center '>
-          <h2 className='text-white uppercase tracking-widest text-xs text-center max-w-80'>Dynamic Web Magic with Next.js</h2>
+          <h2 className='text-white uppercase tracking-widest text-xs text-center max-w-80'>Full Stack Developer | Open to Internships</h2>
           <TextGenerateEffect
           className="text-white text-center text-[40px] md:text-[50px] lg:text-[60px]"
-          words="Transforming Ideas into Stunning Web Experiences with Next.js "
+          words="Building Real-Time Web Apps with Next.js & TypeScript"
           />
           <p className='text-center text-white md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Hi i am Pranay Kumar Jha a coding enthusiast based in Bangalore,India .
-
+            Hi, I&apos;m Pranay Kumar Jha — a Computer Science student and full-stack developer based in Bangalore, India.
           </p>
-          <a href="#About">
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+          <a href="#about">
             <MagicButton
-            title='Show my portfolio'
+            title='View my work'
             icon={<FaLocationArrow />}
             position='right'
             />
           </a>
+          <a href="/Pranay_Resume.pdf" download="Pranay_Kumar_Jha_Resume.pdf">
+            <MagicButton
+            title='Download Resume'
+            icon={<FaLocationArrow />}
+            position='right'
+            />
+          </a>
+          </div>
 
         </div> 
 

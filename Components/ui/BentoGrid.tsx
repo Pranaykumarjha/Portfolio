@@ -109,7 +109,7 @@ export const BentoGridItem = ({
 
               {/* Left Column */}
               <div className="flex flex-col gap-3 lg:gap-3">
-                {['React.js', 'Next.js', 'TypeScript'].map((item) => (
+                {['React.js', 'Next.js', 'Tailwind CSS'].map((item) => (
                   <span
                     key={item}
                     className="px-3 py-2 lg:px-4 lg:py-3 text-xs lg:text-sm rounded-lg
