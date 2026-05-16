@@ -6,7 +6,7 @@ A modern and responsive portfolio website showcasing my projects, skills, and ex
 
 ## 🚀 Live Demo
 
- https://jocular-blancmange-d2b8ce.netlify.app/
+https://harmonious-figolla-453702.netlify.app/
 
 ---
 
