@@ -6,8 +6,11 @@ A modern and responsive portfolio website showcasing my projects, skills, and ex
 
 ## 🚀 Live Demo
 
-https://6a08f17372bb5eb6fef56f98--harmonious-figolla-453702.netlify.app/
+
+🔗 [View Portfolio](https://6a08f17372bb5eb6fef56f98--harmonious-figolla-453702.netlify.app/)
+
 ---
+
 
 ## 📸 Preview
 
