@@ -7,7 +7,7 @@ import MagicButton from "./MagicButton";
 import { div } from "motion/react-client";
 import { useState } from "react";
 import Lottie from 'react-lottie';
-import animationData from '@/data/confetti.json';
+import animationData from '@/Data/confetti.json';
 import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
