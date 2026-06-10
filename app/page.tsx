@@ -5,9 +5,12 @@ import { FaHome } from "react-icons/fa";
 import Grid from "@/Components/Grid";
 import RecentProjects from "@/Components/RecentProjects";
 import { navItems } from "@/Data";
-import Clients from "@/Components/Clients";
+import Education from "@/Components/Education";
 import Experience from "@/Components/Experience";
-import Approach from "@/Components/Approach";
+import Skills from "@/Components/Skills";
+import DevelopmentProcess from "@/Components/Approach";
+import CurrentlyLearning from "@/Components/CurrentlyLearning";
+import Technology3DGlobe from "@/Components/Technology3DGlobe";
 import Footer from "@/Components/Footer";
 
 export default function Home() {
@@ -16,13 +19,17 @@ export default function Home() {
     <div className="max-w-7xl w-full">
       <FloatingNav navItems={navItems}/>
       <Hero />
-      <Grid />
+      <Skills />
       <RecentProjects />
-      <Clients/>
       <Experience />
-      <Approach />
+      <Education />
+      <DevelopmentProcess />
+      <CurrentlyLearning />
+      <Technology3DGlobe />
+      <Grid />
       <Footer />
     </div>
    </main>
   );
 }
+

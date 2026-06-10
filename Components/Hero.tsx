@@ -1,9 +1,11 @@
+"use client";
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { cn } from '@/utils/cn'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
+import { motion } from 'motion/react'
 
 const Hero = () => {
   return (
@@ -27,18 +29,71 @@ const Hero = () => {
     </div>
       <div className='relative z-10 flex justify-center my-20' >
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center '>
-          <h2 className='text-white uppercase tracking-widest text-xs text-center max-w-80'>Full Stack Developer | Open to Internships</h2>
+          {/* Availability Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className='mb-4'
+          >
+            <div className='inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-400/30 bg-purple-400/10'>
+              <div className='w-2 h-2 bg-green-400 rounded-full animate-pulse'></div>
+              <span className='text-purple-300 text-xs md:text-sm font-semibold'>Open to Internships & Full-Time Roles</span>
+            </div>
+          </motion.div>
+
+          {/* Main Headline */}
+          <h2 className='text-white uppercase tracking-widest text-xs text-center max-w-80 mb-4'>
+            Full Stack Developer & Problem Solver
+          </h2>
+          
           <TextGenerateEffect
           className="text-white text-center text-[40px] md:text-[50px] lg:text-[60px]"
-          words="Building Real-Time Web Apps with Next.js & TypeScript"
+          words="Crafting Scalable Web Applications & Real-Time Systems"
           />
-          <p className='text-center text-white md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Hi, I&apos;m Pranay Kumar Jha — a Computer Science student and full-stack developer based in Bangalore, India.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-          <a href="#about">
+
+          {/* Professional Summary */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className='mt-8 text-center space-y-3'
+          >
+            <p className='text-white/90 md:tracking-wider text-sm md:text-lg'>
+              Hi, I&apos;m Pranay Kumar Jha — a Computer Science student and full-stack developer specializing in modern web technologies.
+            </p>
+            
+            {/* Skills Summary */}
+            <div className='pt-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-center'>
+              <div className='px-3 py-2 rounded-lg bg-white/5 border border-white/10 hover:border-purple-400/50 transition-colors'>
+                <p className='text-purple-300 text-xs font-bold'>Full-Stack</p>
+                <p className='text-white/70 text-xs'>Development</p>
+              </div>
+              <div className='px-3 py-2 rounded-lg bg-white/5 border border-white/10 hover:border-purple-400/50 transition-colors'>
+                <p className='text-purple-300 text-xs font-bold'>Real-Time</p>
+                <p className='text-white/70 text-xs'>Applications</p>
+              </div>
+              <div className='px-3 py-2 rounded-lg bg-white/5 border border-white/10 hover:border-purple-400/50 transition-colors'>
+                <p className='text-purple-300 text-xs font-bold'>Next.js &</p>
+                <p className='text-white/70 text-xs'>TypeScript</p>
+              </div>
+              <div className='px-3 py-2 rounded-lg bg-white/5 border border-white/10 hover:border-purple-400/50 transition-colors'>
+                <p className='text-purple-300 text-xs font-bold'>Backend</p>
+                <p className='text-white/70 text-xs'>Development</p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* CTA Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-col sm:flex-row items-center gap-4 mt-10"
+          >
+          <a href="#skills">
             <MagicButton
-            title='View my work'
+            title='View my Skills'
             icon={<FaLocationArrow />}
             position='right'
             />
@@ -50,7 +105,7 @@ const Hero = () => {
             position='right'
             />
           </a>
-          </div>
+          </motion.div>
 
         </div> 
 
